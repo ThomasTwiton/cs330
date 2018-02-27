@@ -19,12 +19,12 @@ function add() {
         myrow.appendChild(newcell)       
     }
     if (priorityinput.value == "High"){
-        myrow.style.backgroundColor = "red"
+        myrow.classList.add("danger")
     } 
     if (priorityinput.value == "Medium"){
-        myrow.style.backgroundColor = "yellow"
+        myrow.classList.add("warning")
     } 
     if (priorityinput.value == "Low"){
-        myrow.style.backgroundColor = "green"
+        myrow.classList.add("success")
     } 
 }
