@@ -1,0 +1,43 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<title>Prime Numbers</title>
+		<link href="shoppinglist.css" rel="stylesheet" />
+	</head>
+	<div class=form-group>
+			<label for="primeinput">How many primes would you like?</label>
+			<input type=text class=form-control id=primeinput />
+			<button onclick="clickedon()" class="btn btn-primary" id=gobutt>Go</button>
+		</div>
+	<body>
+		<div class="container">
+			<div class = col-md-6>
+			<div class=form-group>
+				<label for="primeinput">How many primes would you like?</label>
+				<input type=text class=form-control id=primeinput />
+				<button onclick="clickedon()" class="btn btn-primary" id=gobutt>Go</button>
+			</div>
+			</div>
+			<div class = col-md-6>
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Prime Numbers</th>
+						</tr>
+					</thead>
+					<tbody id=primetab>
+
+					</tbody>
+				</table>
+			</div>
+			</div>
+		</div>
+
+		<script src="primes.js" type=text/javascript></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+	</body>
+</html>
