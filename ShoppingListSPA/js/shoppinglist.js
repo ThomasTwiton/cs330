@@ -71,7 +71,7 @@ class ShoppingList{
     }
 }
 
-function add() {
+function onclick() {
     //let mytable = document.querySelector("#list")
 
     let iteminput = document.querySelector("#item")
