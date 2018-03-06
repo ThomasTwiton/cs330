@@ -39,6 +39,10 @@ class ShoppingList extends Subject{
         this._items.push(newitem)
         this.publish("newitem_addedto_shoppinglist", this)
     }
+
+    checkBought() {
+        this.publish("somethingbought?", this)
+    }
 }
 
 class Item{
@@ -49,6 +53,7 @@ class Item{
         this._store = store
         this._section = section
         this._price = price
+        this._bought = false
     }
     get name(){
         return this._name
@@ -67,5 +72,13 @@ class Item{
     }
     get price(){
         return this._price
+    }
+
+    get bought(){
+        return this._bought
+    }
+
+    set bought(nv){
+        this._bought = nv
     }
 }

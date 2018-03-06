@@ -12,3 +12,7 @@ function onClick() {
     let myitem = new Item(iteminput.value, qtyinput.value, priorityinput.value, storeinput.value, sectioninput.value, priceinput.value)
     myshoppinglist.addItem(myitem)
 }
+
+function onCheck() {
+    myshoppinglist.checkBought()
+}
