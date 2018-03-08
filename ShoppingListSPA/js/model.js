@@ -29,6 +29,7 @@ class ShoppingList extends Subject{
     constructor(){
         super()
         this._items = []
+        this._olditems = []
     }
 
     get items(){
