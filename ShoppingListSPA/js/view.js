@@ -1,3 +1,4 @@
+//https://bnmnetp.github.io/shopping_cs330_s18/index.html# harvest organs later
 function redrawTable(scope, msg){
     console.log(msg)
     mytable = document.querySelector("#list")
@@ -39,10 +40,13 @@ function redrawTable(scope, msg){
         } 
         if (thisitem.priority == "Low"){
             myrow.classList.add("success")
-        }         
+        }
         if(thisitem.bought == true){
             myrow.classList += " strikeout"
             checkbox.childNodes[0].checked = true
+            alert(scope.items[i].name)
+            delete scope.items[i]
+            alert(scope.items[i].name)
         } else{
             let klass = myrow.classList
             myrow.classList = klass[0]
