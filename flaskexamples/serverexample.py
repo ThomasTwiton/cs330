@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/getnum') #decorator, makes /getnum a key in a dictionary for anyname
 def anyname():
+    #time.sleep(2)
     res = Response(json.dumps({'number':random.randrange(100)}))
     #res.headers['Access-Control-Allow-Origin'] = '*'
     res.headers['Content-type'] = 'application/json'

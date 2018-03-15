@@ -1,0 +1,24 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="foo">
+
+        </div>
+        <script type="text/javascript">
+            console.log('starting fetch')
+            fetch("/getnum")
+            .then(function(response){
+                console.log(response)
+                return response.json()
+            })
+            .catch(error => console.error('Erroror: ', error))
+            .then(function(myJson) {
+                document.getElementById("foo").innerHTML = myJson.number
+                console.log('all done')
+            })
+        </script>
+    </body>
+</html>

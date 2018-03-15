@@ -16,6 +16,12 @@
             }
             xhttp.open("GET", "/getnum", true);
             xhttp.send();
+            console.log("sent request")
+            for (let i = 0; i<10;i++){
+                let p = document.createElement('p')
+                p.innerHTML = i
+                document.body.appendChild(p)
+            }
         </script>
     </body>
 </html>
