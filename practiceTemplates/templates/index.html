@@ -3,10 +3,12 @@
         <!--<h1>Hello {{ person}}</h1>-->
         <h1>Hello {{ vars.first_name}} {{vars.last_name}}</h1>
 
-        <ul>
+        <table>
             {% for num in num_list %}
-            <li> {{num}} </li>
+            <tr> 
+                <td>{{num}}</td> 
+            </tr>
             {% endfor %}
-        </ul>
+        </table>
     </body>
 </html>
