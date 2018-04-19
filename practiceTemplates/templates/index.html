@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <!--<h1>Hello {{ person}}</h1>-->
+        <h1>Hello {{ vars.first_name}} {{vars.last_name}}</h1>
+
+        <ul>
+            {% for num in num_list %}
+            <li> {{num}} </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
