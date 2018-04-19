@@ -1,14 +1,17 @@
-<html>
-    <body>
-        <!--<h1>Hello {{ person}}</h1>-->
-        <h1>Hello {{ vars.first_name}} {{vars.last_name}}</h1>
+{% extends "base.html" %}
 
-        <table>
-            {% for num in num_list %}
-            <tr> 
-                <td>{{num}}</td> 
-            </tr>
-            {% endfor %}
-        </table>
-    </body>
-</html>
+{%block content%}
+<table>
+        <!-- {% for num in num_list %}
+        <tr> 
+            <td>{{num}}</td> 
+        </tr>
+        {% endfor %} -->
+        {% for i in range(0, num_list|length, 2)%}
+        <tr> 
+            <td>{{num_list[i]}}</td>
+            <td>{{num_list[i+1]}}</td>  
+        </tr>
+        {% endfor %}
+    </table>
+{%endblock %}
