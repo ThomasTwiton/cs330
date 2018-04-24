@@ -2,9 +2,29 @@
 
 {%block content%}
 <form action="/proccessform">
-    <input type="text" name="first_name">
-    <input type="text" name="last_name">
+    <label for="fn">First Name</label>
+    <input type="text" id = "fn" name="first_name" placeholder="Bobby"> <br>
+    <label for="ln">Last Name</label>
+    <input type="text" id="ln" name="last_name" placeholder="Bobson"><br>
+    <label for="m1">Audi</label>
+    <input type = "checkbox" id=m1 name = "make" value = "audi">
+    <label for="m2">BMW</label>
+    <input type = "checkbox" id=m2 name = "make" value = "bmw">
+    <label for="m3">Segue</label>
+    <input type = "checkbox" id=m3 name = "make" value = "segue"> <br>
+    <label for="oi">How many odd integers would you like?</label>
+    <input type="text" id = "oi" name="num_toprint" placeholder="What's an integer?"> <br>
 
-    <input type="submit">
+    <button type="submit">Click Me</button>
 </form>
+
+<table>
+    {% for i in range(0, num_list|length, 2)%}
+    <tr> 
+        <td>{{num_list[i]}}</td>
+        <td>{{num_list[i+1]}}</td>  
+    </tr>
+    {% endfor %}
+</table>
+
 {%endblock %}
