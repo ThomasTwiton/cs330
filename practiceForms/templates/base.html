@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <!--<h1>Hello {{ person}}</h1>-->
+        {% block navbar%}
+        <h1>Hello {{ vars.first_name}} {{vars.last_name}}</h1>
+        {% endblock %}
+
+        {% block content%}
+        <p>hello again :3</p>
+        {% endblock %}
+
+        {% block footer %}
+        <p>thanks for playin', plaything</p>
+        {% endblock %}
+
+    </body>
+</html>
