@@ -1,0 +1,28 @@
+{%extends "bootstrap/base.html" %}
+
+{%block content%}
+    <table class="table table-striped">
+        <tr>
+            <th>{{theader.description[0].name}}</th>
+            <th>{{theader.description[1].name}}</th>
+            <th>{{theader.description[2].name}}</th>
+            <th>{{theader.description[3].name}}</th>
+            <th>{{theader.description[6].name}}</th>
+            <th>{{theader.description[7].name}}</th>
+            <th>{{theader.description[11].name}}</th>
+            <th>{{theader.description[5].name}}</th>
+        </tr>
+        {% for i in range(0, data|length)%}
+        <tr> 
+            <td>{{data[i][0]}}</td>
+            <td>{{data[i][1]}}</td>
+            <td>{{data[i][2]}}</td>
+            <td>{{data[i][3]}}</td>
+            <td>{{data[i][6]}}</td>
+            <td>{{data[i][7]}}</td>
+            <td>{{data[i][11]}}</td>
+            <td>{{data[i][5]}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    {%endblock %}

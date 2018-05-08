@@ -1,0 +1,13 @@
+{%extends "bootstrap/base.html" %}
+
+{%block content%}
+    <form action="/processform" class="form-control">
+        <label for=continent>Choose Your Continent</label>
+        <select id=continent name=continent>
+            {%for i in range(0, dropdown|length)%}
+            <option value="{{dropdown[i][0]}}"> {{dropdown[i][0]}} </option>
+            {%endfor%}
+        </select>
+        <input type="submit">
+    </form>
+{%endblock %}
